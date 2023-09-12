@@ -16,3 +16,14 @@ and i found something intresting subdomain, but i don't understand why are repea
 And the answer for this question is /admin 
 
 ![obraz](https://github.com/Anogota/Horizontall/assets/143951834/b324deb9-960d-4b41-acc3-09f588ffa0ef)
+
+4.We need to fingerprint this target in order to identify any potential vulnerabilities. What is the version of Strapi API being used on this target?
+I don't know how to do it, but i will figure it out with small help google. Okay i give you trying to find it, but when i try use searchsploit i got only 5, and i know there version of strapi is: 3.0.0-beta.17.4
+
+5.What is the 2019 CVE id for a vulnerability in Strapi that allows an attacker to change the password of a user without knowing the current password?
+6.What is the 2019 CVE id for a vulnerability that will provide remote code execution to an unauthenticated user?
+
+The answer for this question we can realy quick find on exploit-db, this is a the best resource i find with all most popular exploit, first is CVE is: CVE-2019-18818 and the secend on is: CVE-2019-19609
+
+
+
