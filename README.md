@@ -25,5 +25,28 @@ I don't know how to do it, but i will figure it out with small help google. Okay
 
 The answer for this question we can realy quick find on exploit-db, this is a the best resource i find with all most popular exploit, first is CVE is: CVE-2019-18818 and the secend on is: CVE-2019-19609
 
+7.Submit the flag located in the developer user's home directory.
+I don't why the walktrought on HTB want this exploit, but is use another one to get a reverse shell the EDB-ID is 50239, and with this i got a reverse shell is:
+Download this exploit from exploit-db and insert there the domain.
 
+![obraz](https://github.com/Anogota/Horizontall/assets/143951834/04b1dfa2-6d81-4d28-a55e-8b6f1b4cefab)
 
+the we i got a alert "[*] Rember this is a blind RCE don't expect to see output" and we need create the bash reverse shell but before this rember to turn on your netcat
+Now you can write this on your blind RCE to get RCE, then go to your netcat and we get a reverse shell.
+
+![obraz](https://github.com/Anogota/Horizontall/assets/143951834/fac33310-336d-42d4-937a-8f4a5467abe9)
+
+Now we can do some recon to find user.txt that was easy, here is the user.txt flag.
+![obraz](https://github.com/Anogota/Horizontall/assets/143951834/546a85e5-5ad4-4d51-887d-b32306ebaf98)
+
+And also don't forget use python better shell :P
+
+8.There is a webserver listening only on 127.0.0.1. On what port is it listening?
+
+I don't know the answer for this question but i found something more intresting creds for developer in strapi@horizontall:~/myapi/config/environments/development$ cat database.json
+"username": "developer",  "password": "#J!:F9Zt2u"
+Now we can log in as developer on SSH i hope
+
+![obraz](https://github.com/Anogota/Horizontall/assets/143951834/4dcd16e8-302b-48e8-b1c8-530638d05433)
+
+I try many things but i have no idea how to do it, maybe another time if collect more kwnoledge :P
